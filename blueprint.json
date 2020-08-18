@@ -22,7 +22,7 @@
         "label": "eportal"
       }
     },
-    "timestamp": "2019-06-03T09:47:19+10:00"
+    "timestamp": "2020-08-18T13:21:18+10:00"
   },
   "software": {
     "base": {
@@ -76,7 +76,8 @@
           "permissions": "rw",
           "user": "_Engines_Builder(data_uid)",
           "group": "_Engines_Builder(data_gid)",
-          "fw_user": "_Engines_Builder(cont_user_id)"
+          "fw_user": "_Engines_Builder(cont_user_id)",
+          "exclude_from_backup": "false"
         }
       },
       {
@@ -88,7 +89,8 @@
           "db_username": "_Engines_Builder(engine_name)",
           "db_password": "_Engines_System(random(10))",
           "collation": "utf8_general_ci",
-          "full_access": "false"
+          "full_access": "false",
+          "char_set": "utf8"
         }
       }
     ],
